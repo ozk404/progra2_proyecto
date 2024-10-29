@@ -271,7 +271,7 @@ if (! (isset($_SESSION['user_email']))) {
         </form>
     `;
                                         // Obtener la lista de hoteles
-                                        fetch('http://localhost/backend/hoteles')
+                                        fetch('http://104.197.54.121/backend/hoteles')
                                             .then(response => response.json())
                                             .then(data => {
                                                 const hotelSelect = document.getElementById('id_hotel');
@@ -293,7 +293,7 @@ if (! (isset($_SESSION['user_email']))) {
                                                 Swal.fire("Error", "No se pudo cargar la lista de hoteles.", "error");
                                             });
 
-                                        fetch('http://localhost/backend/tipo_habitacion')
+                                        fetch('http://104.197.54.121/backend/tipo_habitacion')
                                             .then(response => response.json())
                                             .then(data => {
                                                 const hotelSelect = document.getElementById('id_tipo_habitacion');

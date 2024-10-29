@@ -204,7 +204,7 @@ if (! (isset($_SESSION['user_email']))) {
                                     };
 
                                     // Realiza el POST usando fetch
-                                    fetch('http://localhost/backend/habitaciones', {
+                                    fetch('http://104.197.54.121/backend/habitaciones', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',
@@ -243,7 +243,7 @@ if (! (isset($_SESSION['user_email']))) {
 
                                 document.addEventListener('DOMContentLoaded', function() {
                                     // Obtener la lista de hoteles al cargar la página
-                                    fetch('http://localhost/backend/hoteles')
+                                    fetch('http://104.197.54.121/backend/hoteles')
                                         .then(response => response.json())
                                         .then(data => {
                                             const hotelSelect = document.getElementById('id_hotel');
@@ -259,7 +259,7 @@ if (! (isset($_SESSION['user_email']))) {
                                             Swal.Fire("Error", "No se pudo cargar la lista de hoteles.", "error");
                                         });
                                     // Obtener la lista de tipos de habitación
-                                    fetch('http://localhost/backend/tipo_habitacion')
+                                    fetch('http://104.197.54.121/backend/tipo_habitacion')
                                         .then(response => response.json())
                                         .then(data => {
                                             const tipoHabitacionSelect = document.getElementById('id_tipo_habitacion');
@@ -286,7 +286,7 @@ if (! (isset($_SESSION['user_email']))) {
                                         estado: document.getElementById('estado').value
                                     };
 
-                                    fetch('http://localhost/backend/habitaciones', {
+                                    fetch('http://104.197.54.121/backend/habitaciones', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',

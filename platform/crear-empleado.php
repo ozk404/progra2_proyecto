@@ -206,7 +206,7 @@ if (! (isset($_SESSION['user_email']))) {
                                     };
 
                                     // Realiza el POST usando fetch
-                                    fetch('http://localhost/backend/empleados', {
+                                    fetch('http://104.197.54.121/backend/empleados', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',
@@ -245,7 +245,7 @@ if (! (isset($_SESSION['user_email']))) {
 
                                 document.addEventListener('DOMContentLoaded', function() {
                                     // Obtener la lista de hoteles al cargar la página
-                                    fetch('http://localhost/backend/hoteles')
+                                    fetch('http://104.197.54.121/backend/hoteles')
                                         .then(response => response.json())
                                         .then(data => {
                                             const hotelSelect = document.getElementById('id_hotel');
@@ -274,7 +274,7 @@ if (! (isset($_SESSION['user_email']))) {
                                         id_hotel: document.getElementById('id_hotel').value,
                                     };
 
-                                    fetch('https://localhost/backend/empleados', {
+                                    fetch('https://104.197.54.121/backend/empleados', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',

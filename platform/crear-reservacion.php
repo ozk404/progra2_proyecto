@@ -224,7 +224,7 @@ if (! (isset($_SESSION['user_email']))) {
                                     console.log('Datos de la reservación:', reservacionData);
 
                                     // Realiza la solicitud POST para crear la reservación con detalles
-                                    fetch('http://localhost/backend/reservaciones', {
+                                    fetch('http://104.197.54.121/backend/reservaciones', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',
@@ -258,7 +258,7 @@ if (! (isset($_SESSION['user_email']))) {
 
                                 document.addEventListener('DOMContentLoaded', function() {
                                     // Cargar listas de clientes, empleados, hoteles, y tipos de habitación
-                                    fetch('http://localhost/backend/clientes')
+                                    fetch('http://104.197.54.121/backend/clientes')
                                         .then(response => response.json())
                                         .then(data => {
                                             const clienteSelect = document.getElementById('id_cliente');
@@ -271,7 +271,7 @@ if (! (isset($_SESSION['user_email']))) {
                                         })
                                         .catch(error => console.error('Error al obtener clientes:', error));
 
-                                    fetch('http://localhost/backend/empleados')
+                                    fetch('http://104.197.54.121/backend/empleados')
                                         .then(response => response.json())
                                         .then(data => {
                                             const empleadoSelect = document.getElementById('id_empleado');
@@ -284,7 +284,7 @@ if (! (isset($_SESSION['user_email']))) {
                                         })
                                         .catch(error => console.error('Error al obtener empleados:', error));
 
-                                    fetch('http://localhost/backend/hoteles')
+                                    fetch('http://104.197.54.121/backend/hoteles')
                                         .then(response => response.json())
                                         .then(data => {
                                             const hotelSelect = document.getElementById('id_hotel');
@@ -297,7 +297,7 @@ if (! (isset($_SESSION['user_email']))) {
                                         })
                                         .catch(error => console.error('Error al obtener hoteles:', error));
 
-                                    fetch('http://localhost/backend/habitaciones')
+                                    fetch('http://104.197.54.121/backend/habitaciones')
                                         .then(response => response.json())
                                         .then(data => {
 
@@ -307,7 +307,7 @@ if (! (isset($_SESSION['user_email']))) {
 
                                                 const option = document.createElement('option');
                                                 option.value = tipo.id;
-                                                fetch('http://localhost/backend/tipo_habitacion/' + tipo.id_tipo_habitacion)
+                                                fetch('http://104.197.54.121/backend/tipo_habitacion/' + tipo.id_tipo_habitacion)
                                                     .then(response => response.json())
                                                     .then(datax => {
                                                         option.textContent = tipo.numero + " - " + datax.nombre;

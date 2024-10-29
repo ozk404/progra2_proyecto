@@ -193,7 +193,7 @@ if (! (isset($_SESSION['user_email']))) {
                                     };
 
                                     // Realiza el POST usando fetch
-                                    fetch('http://localhost/backend/clientes', {
+                                    fetch('http://104.197.54.121/backend/clientes', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',

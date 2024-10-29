@@ -182,7 +182,7 @@ if (! (isset($_SESSION['user_email']))) {
             event.preventDefault();
 
             // Obtener listado de reservaciones desde el endpoint
-            fetch('http://localhost/backend/reservaciones') // Endpoint que devuelve la lista de reservaciones
+            fetch('http://104.197.54.121/backend/reservaciones') // Endpoint que devuelve la lista de reservaciones
                 .then(response => response.json())
                 .then(data => {
                     if (data.length === 0) {
@@ -211,7 +211,7 @@ if (! (isset($_SESSION['user_email']))) {
                     }).then((result) => {
                         if (result.isConfirmed && result.value) {
                             // Enviar el ID de la reservación seleccionada al endpoint /reserv para obtener el PDF
-                            fetch(`http://localhost/backend/reservacion/pdf/`+result.value, {
+                            fetch(`http://104.197.54.121/backend/reservacion/pdf/`+result.value, {
                                     method: 'GET',
                                     headers: {
                                         'Content-Type': 'application/json',

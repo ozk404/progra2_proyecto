@@ -267,7 +267,7 @@ if (! (isset($_SESSION['user_email']))) {
     });
 
     // Obtener la lista de hoteles
-    fetch('http://localhost/backend/hoteles')
+    fetch('http://104.197.54.121/backend/hoteles')
         .then(response => response.json())
         .then(data => {
             const hotelSelect = document.getElementById('hotel');
