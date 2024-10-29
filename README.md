@@ -1,7 +1,7 @@
 # 🐍 Proyecto Final de Programación II - Sistema de Hoteles
 
 Este proyecto es un sistema de hotelería diseñado para gestionar reservaciones de habitaciones en un hotel, con funcionalidades para registrar, gestionar y consultar clientes, empleados, habitaciones, y realizar reservaciones detalladas con fechas, costos y disponibilidad.
-✅✅✅ Proyecto ya listo para usar en producción: http://104.197.54.121
+- ✅✅✅ Proyecto ya listo para usar en producción: http://104.197.54.121
 
 ## Requisitos de proyecto cumplidos:
 - ✅ Usuario: Registre las credenciales del empleado que tendrá acceso al sistema
@@ -19,13 +19,13 @@ Reportes requeridos:
 - ✅ Verificar habitación disponible: Este reporte debe indicarle al cliente el tipo de habitación disponible con sus respectivos costos.
 
 ## Funcionalidades extras del proyecto:
-✅ Arquitectura con Docker y Docker-Compose
-✅ Reverse Proxy con Nginx
-✅ Frontend con PHP Y JavaScript
-✅ Base de Datos ya inicluida en el proyecto
-✅ Generación de PDFS
-✅ Arquitectura Cloud en Google Cloud Platform
-✅✅✅ Proyecto ya listo para usar en producción: http://104.197.54.121
+- ✅ Arquitectura con Docker y Docker-Compose
+- ✅ Reverse Proxy con Nginx
+- ✅ Frontend con PHP Y JavaScript
+- ✅ Base de Datos ya inicluida en el proyecto
+- ✅ Generación de PDFS
+- ✅ Arquitectura Cloud en Google Cloud Platform
+- ✅✅✅ Proyecto ya listo para usar en producción: http://104.197.54.121
 
 
 
