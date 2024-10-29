@@ -6,7 +6,6 @@ Este proyecto es un sistema de hotelería diseñado para gestionar reservaciones
 - [Características](#características)
 - [Requisitos](#requisitos)
 - [Instalación](#instalación)
-- [Estructura del Proyecto](#estructura-del-proyecto)
 - [Funciones Principales](#funciones-principales)
 - [Ejemplo de Uso de la API](#ejemplo-de-uso-de-la-api)
 - [Contribuciones](#contribuciones)
@@ -32,7 +31,7 @@ Este sistema cumple con los siguientes requisitos de funcionalidad:
 ## Requisitos
 
 Para ejecutar este proyecto, asegúrate de tener instalados los siguientes componentes:
-
+- **Docker y Docker-Compose**
 - **Python** 3.x
 - **Flask** y **SQLAlchemy** para el backend de la API en Python.
 - **PHP** para el manejo de ciertos formularios.
@@ -45,47 +44,17 @@ Para ejecutar este proyecto, asegúrate de tener instalados los siguientes compo
 
 1. **Clona el repositorio** en tu máquina local:
    ```bash
-   git clone https://github.com/tu_usuario/proyecto_hotel.git
-   cd proyecto_hotel
+   git clone https://github.com/tu_usuario/progra2_proyecto.git
+   cd progra2_proyecto
    ```
 
-2. **Crea un entorno virtual** (opcional pero recomendado):
+2. **Monta el proyecto con docker** (solo basta con un comando):
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # En Windows: venv\Scripts\activate
+    docker-compose up -d --build
    ```
 
-3. **Instala las dependencias** desde `requirements.txt`:
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. **Listo! ahora ya puedes acceder a la interfaz web** a través de `http://127.0.0.1` en tu navegador.
 
-4. **Configura la base de datos**:
-   - Crea una base de datos en MySQL o PostgreSQL.
-   - Actualiza la configuración en el archivo `config.py` o `.env` con las credenciales y detalles de conexión de tu base de datos.
-
-5. **Ejecuta las migraciones** para crear las tablas necesarias:
-   ```bash
-   flask db upgrade
-   ```
-
-6. **Inicia el servidor** de Flask:
-   ```bash
-   flask run
-   ```
-
-7. **Accede a la interfaz web** a través de `http://127.0.0.1` en tu navegador.
-
-## Estructura del Proyecto
-
-- **app/**: Carpeta principal de la aplicación de Flask.
-  - **models.py**: Define las tablas y relaciones de la base de datos (Usuarios, Hoteles, Habitaciones, Clientes, Empleados, Reservaciones y Detalles de Reservación).
-  - **routes.py**: Contiene las rutas y lógica de negocio para gestionar los endpoints de la API.
-  - **templates/**: Archivos HTML para la interfaz de usuario.
-  - **static/**: Archivos estáticos como CSS y JavaScript.
-- **scripts/**: Contiene archivos JavaScript con lógica para manejar peticiones AJAX y dinámicas en el frontend.
-- **docs/**: Documentación adicional y archivos relacionados con la configuración del proyecto.
-- **config.py**: Configuración de conexión de base de datos y otros ajustes generales.
 
 ## Funciones Principales
 
