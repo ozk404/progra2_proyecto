@@ -19,7 +19,7 @@ if (! (isset($_SESSION['user_email']))) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title Page-->
-    <title>Usuarios - Hotel Mariano Gálvez</title>
+    <title>Tipos Habitación - Hotel Mariano Gálvez</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -146,7 +146,7 @@ if (! (isset($_SESSION['user_email']))) {
         <br class="pb-15 pt-5">
 
         <!-- Formulario para crear un Tipo Habitacion -->
-        <form action="crear-tipo_habitacion.php" method="post">
+        <form action="crear-tipohabitacion.php" method="post">
             <button class="col-8 btn btn-secondary" name="accion" value="tipo_habitacion">Crear Tipo Habitacion</button>
         </form>
         <br class="pb-5 pt-5">

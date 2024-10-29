@@ -91,11 +91,11 @@ if (! (isset($_SESSION['user_email']))) {
                                 <i class="fas fa-user"></i>Menu Usuarios</a>
                         </li>
 
-                        <li >
+                        <li>
                             <a href="/hoteles.php">
                                 <i class="fas fa-home"></i>Menu Hoteles</a>
                         </li>
-<li>
+                        <li class="active has-sub">
                             <a href="/tipohabitaciones.php">
                                 <i class="fas fa-home"></i>Menu Habitaciones</a>
                         </li>
@@ -107,7 +107,7 @@ if (! (isset($_SESSION['user_email']))) {
                             <a href="/clientes.php">
                                 <i class="fas fa-user"></i>Menu Clientes</a>
                         </li>
-                        <li class="active has-sub">
+                        <li>
                             <a href="/empleados.php">
                                 <i class="fas fa-user"></i>Menu Empleados</a>
                         </li>
