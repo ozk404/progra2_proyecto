@@ -138,7 +138,7 @@ if (! (isset($_SESSION['user_email']))) {
                        <br>
                         </div>
                         <?php
-                                $usuariosJson = file_get_contents('http://172.19.0.5/backend/hoteles');
+                                $usuariosJson = file_get_contents('http://127.0.0.1/backend/hoteles');
                                 $hoteles = json_decode($usuariosJson, true);
 
                         ?>
