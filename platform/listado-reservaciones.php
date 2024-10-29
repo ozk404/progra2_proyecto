@@ -144,7 +144,7 @@ if (! (isset($_SESSION['user_email']))) {
                             <br>
                         </div>
                         <?php
-                        $usuariosJson = file_get_contents('http://127.0.0.1/backend/reservaciones');
+                        $usuariosJson = file_get_contents('http://104.197.54.121/backend/reservaciones');
                         $reservaciones = json_decode($usuariosJson, true);
 
                         ?>
@@ -168,11 +168,11 @@ if (! (isset($_SESSION['user_email']))) {
                                     <tbody>
                                         <?php if (!empty($reservaciones)): ?>
                                             <?php foreach ($reservaciones as $reservacion):
-                                                $hotelesJson = file_get_contents('http://127.0.0.1/backend/hoteles/'.$reservacion['id_hotel']);    
+                                                $hotelesJson = file_get_contents('http://104.197.54.121/backend/hoteles/'.$reservacion['id_hotel']);    
                                                 $jotels = json_decode($hotelesJson, true);
-                                                $hotelesJsonC = file_get_contents('http://127.0.0.1/backend/clientes/'.$reservacion['id_cliente']);
+                                                $hotelesJsonC = file_get_contents('http://104.197.54.121/backend/clientes/'.$reservacion['id_cliente']);
                                                 $jotelsC = json_decode($hotelesJsonC, true);
-                                                $empleadox = file_get_contents('http://127.0.0.1/backend/empleados/'.$reservacion['id_empleado']);
+                                                $empleadox = file_get_contents('http://104.197.54.121/backend/empleados/'.$reservacion['id_empleado']);
                                                 $empleadoC = json_decode($empleadox, true);
                                                 ?>
                                                 <tr>
@@ -240,7 +240,7 @@ if (! (isset($_SESSION['user_email']))) {
 
                                     function eliminarUsuario(usuarioId) {
                                         console.log(usuarioId);
-                                        fetch(`http://127.0.0.1/backend/reservaciones/${usuarioId}`, {
+                                        fetch(`http://104.197.54.121/backend/reservaciones/${usuarioId}`, {
                                                 method: 'DELETE'
                                             })
                                             .then(response => {

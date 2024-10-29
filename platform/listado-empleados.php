@@ -138,7 +138,7 @@ if (! (isset($_SESSION['user_email']))) {
                        <br>
                         </div>
                         <?php
-                                $usuariosJson = file_get_contents('http://127.0.0.1/backend/empleados');
+                                $usuariosJson = file_get_contents('http://104.197.54.121/backend/empleados');
                                 $empleados = json_decode($usuariosJson, true);
 
                         ?>
@@ -206,7 +206,7 @@ if (! (isset($_SESSION['user_email']))) {
 
                                     function eliminarUsuario(usuarioId) {
                                         console.log(usuarioId);
-                                        fetch(`http://127.0.0.1/backend/empleados/${usuarioId}`, {
+                                        fetch(`http://104.197.54.121/backend/empleados/${usuarioId}`, {
                                                 method: 'DELETE'
                                             })
                                             .then(response => {
@@ -292,7 +292,7 @@ if (! (isset($_SESSION['user_email']))) {
 
 
                                     function actualizarUsuario(data) {
-                                        fetch(`http://127.0.0.1/backend/empleados/${data.id}`, {
+                                        fetch(`http://104.197.54.121/backend/empleados/${data.id}`, {
                                                 method: 'PUT', // O 'PATCH' según tu API
                                                 headers: {
                                                     'Content-Type': 'application/json',
