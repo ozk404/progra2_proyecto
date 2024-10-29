@@ -4,19 +4,19 @@ Este proyecto es un sistema de hotelería diseñado para gestionar reservaciones
 ✅✅✅ Proyecto ya listo para usar en producción: http://104.197.54.121
 
 ## Requisitos de proyecto cumplidos:
-✅ Usuario: Registre las credenciales del empleado que tendrá acceso al sistema
-✅ Hotel: Registra los datos generales del hotel que presta el servicio
-✅ Tipo de habitación: Clasifica una habitación de acuerdo con la comodidad de esta
-✅ Habitación: Registro de las habitaciones disponibles en un hotel, incluye el tipo de habitación
-✅ Cliente: Registro los datos generales de la persona que solicita habitaciones
-✅ Empleados: Registro de personas que laboran en el hotel
-✅ Reservación: Consiste en el evento más importante del sistema y divide la lógica de esta en las siguientes tablas:
-✅ Reservación: Registra los datos del cliente, empleado, hotel, costos
-✅ Detalle de reservación: Lista las habitaciones y los días reservados
+- ✅ Usuario: Registre las credenciales del empleado que tendrá acceso al sistema
+- ✅ Hotel: Registra los datos generales del hotel que presta el servicio
+- ✅ Tipo de habitación: Clasifica una habitación de acuerdo con la comodidad de esta
+- ✅ Habitación: Registro de las habitaciones disponibles en un hotel, incluye el tipo de habitación
+- ✅ Cliente: Registro los datos generales de la persona que solicita habitaciones
+- ✅ Empleados: Registro de personas que laboran en el hotel
+- ✅ Reservación: Consiste en el evento más importante del sistema y divide la lógica de esta en las siguientes tablas:
+- ✅ Reservación: Registra los datos del cliente, empleado, hotel, costos
+- ✅ Detalle de reservación: Lista las habitaciones y los días reservados
 
 Reportes requeridos:
-✅ Búsqueda de reservación: Este reporte debe visualizar los datos de la reservación realizada, cliente, empleado, habitaciones, fechas, costos.
-✅ Verificar habitación disponible: Este reporte debe indicarle al cliente el tipo de habitación disponible con sus respectivos costos.
+- ✅ Búsqueda de reservación: Este reporte debe visualizar los datos de la reservación realizada, cliente, empleado, habitaciones, fechas, costos.
+- ✅ Verificar habitación disponible: Este reporte debe indicarle al cliente el tipo de habitación disponible con sus respectivos costos.
 
 ## Funcionalidades extras del proyecto:
 ✅ Arquitectura con Docker y Docker-Compose
